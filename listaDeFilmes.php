@@ -5,64 +5,54 @@ include "cabecalho.php"
 
 <div class="lista-filmes">
     <div class="card-filme">
-        <img src="img/filme1.webp">
+        <a href="umfilme.php"><img src="img/filme1.webp"></a>
         <h3>Jurassic Park</h3>
         <span>⭐ 8/10</span>
     </div>
     <div class="card-filme">
-        <img src="img/filme2.jpg">
-        <h3>Karate Kid Legends</h3>
-        <span>⭐ 9/10</span>
-    </div>
-    <div class="card-filme">
-        <img src="img/Lilo.webp">
-        <h3>Lilo e Stitch</h3>
-        <span>⭐ 10/10</span>
-    </div>
-    <div class="card-filme">
-        <img src="img/Pecadores.jpg">
-        <h3>Pecadores</h3>
-        <span>⭐ 7/10</span>
-    </div>
-    <div class="card-filme">
-        <img src="img/filme1.webp">
+        <a href="umfilme.php"><img src="img/filme1.webp"></a>
         <h3>Jurassic Park</h3>
-        <span>⭐ 10/10</span>
+        <span>⭐ 8/10</span>
     </div>
     <div class="card-filme">
-        <img src="img/filme2.jpg">
-        <h3>Karate Kid Legends</h3>
-        <span>⭐ 10/10</span>
-    </div>
-    <div class="card-filme">
-        <img src="img/Lilo.webp">
-        <h3>Lilo e Stitch</h3>
-        <span>⭐ 10/10</span>
-    </div>
-    <div class="card-filme">
-        <img src="img/Pecadores.jpg">
-        <h3>Pecadores</h3>
-        <span>⭐ 10/10</span>
-    </div>
-    <div class="card-filme">
-        <img src="img/filme1.webp">
+        <a href="umfilme.php"><img src="img/filme1.webp"></a>
         <h3>Jurassic Park</h3>
-        <span>⭐ 10/10</span>
+        <span>⭐ 8/10</span>
     </div>
     <div class="card-filme">
-        <img src="img/filme2.jpg">
-        <h3>Karate Kid Legends</h3>
-        <span>⭐ 10/10</span>
+        <a href="umfilme.php"><img src="img/filme1.webp"></a>
+        <h3>Jurassic Park</h3>
+        <span>⭐ 8/10</span>
     </div>
     <div class="card-filme">
-        <img src="img/Lilo.webp">
-        <h3>Lilo e Stitch</h3>
-        <span>⭐ 10/10</span>
+        <a href="umfilme.php"><img src="img/filme1.webp"></a>
+        <h3>Jurassic Park</h3>
+        <span>⭐ 8/10</span>
     </div>
     <div class="card-filme">
-        <img src="img/Pecadores.jpg">
-        <h3>Pecadores</h3>
-        <span>⭐ 10/10</span>
+        <a href="umfilme.php"><img src="img/filme1.webp"></a>
+        <h3>Jurassic Park</h3>
+        <span>⭐ 8/10</span>
+    </div>
+    <div class="card-filme">
+        <a href="umfilme.php"><img src="img/filme1.webp"></a>
+        <h3>Jurassic Park</h3>
+        <span>⭐ 8/10</span>
+    </div>
+    <div class="card-filme">
+        <a href="umfilme.php"><img src="img/filme1.webp"></a>
+        <h3>Jurassic Park</h3>
+        <span>⭐ 8/10</span>
+    </div>
+    <div class="card-filme">
+        <a href="umfilme.php"><img src="img/filme1.webp"></a>
+        <h3>Jurassic Park</h3>
+        <span>⭐ 8/10</span>
+    </div>
+    <div class="card-filme">
+        <a href="umfilme.php"><img src="img/filme1.webp"></a>
+        <h3>Jurassic Park</h3>
+        <span>⭐ 8/10</span>
     </div>
 </div>
 <?php

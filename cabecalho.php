@@ -12,8 +12,8 @@
         <h1>MovieFlix</h1>
         <nav>
             <a href="index.php">Home</a>
-            <a href="index.php">Home</a>
-            <a href="index.php">Home</a>
-            <a href="index.php">Home</a>
+            <a href="listaDeFilmes.php">Filmes</a>
+            <a href="listaDenoticias.php">Notícias</a>
+            <a href="contato.php">Contato</a>
         </nav>
     </header>
