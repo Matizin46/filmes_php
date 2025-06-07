@@ -12,6 +12,7 @@ $mensagem = $_POST['mensagem']
         Em breve retornaremos com uma resposta para o email <em><?php echo $email ?></em></h2>
     <p><strong>Mensagem enviada</strong><br><?php echo $mensagem ?></p>
 </div>
+
 <?php
 include "rodape.php"
-?>
+?>  
