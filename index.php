@@ -8,31 +8,33 @@ include "banner.php";
 
     <div class="row mb-5">
         <?php
-        /*inicio da conexão com o BD*/
-        $servidor = 'localhost';
-        $bd = 'bd_filmes';
-        $usuario = 'root';
-        $senha = '';
 
-        $conexao = mysqli_connect($servidor, $usuario, $senha, $bd);
+        include "conexao.php";
 
-        if(!$conexao){
-            die("deu ruim" . mysqli_connect_errno());
-        }
-
-        // Fim da conexão
-
-        $sql = "select * from filmes";
+        $sql = "select * from filmes order by avaliacao desc limit 4";
+        // trazendo só os mais avaliados e limitando para 4 filmes
         $resultado = mysqli_query($conexao, $sql);
-        
-        while($linha = mysqli_fetch_assoc($resultado)){
-            echo $linha['categoria'] . "<br>";
-            ?>
-            <div class="col-3">
-            <img src="<?=$linha['foto'];?>" class="img-fluid">
-            <h3><?=$linha['filmes'];?></h3>
-            <span>⭐<?=$linha['avaliacao']?>/10</span>
-        </div>
+
+        while ($linha = mysqli_fetch_assoc($resultado)) {
+        ?>
+            <div class="col-md-3 mb-4">
+                <div style="width: 18rem;">
+                    <div class="card" style="width: 18rem;">
+                        <img src="<?= $linha['foto']; ?>" class="card-img-top" style="width:100%; height:500px; object-fit: cover;">
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                <?= mb_strimwidth($linha['filmes'], 0, 18, '...') ?>
+                            </h3>
+                            <p class="card-text">⭐<?= $linha['avaliacao']; ?>/10</p>
+                            <p class="card-text" style="height: 100px;">
+                                <?= mb_strimwidth($linha['historia'], 0, 100, '...') ?>
+                                <!-- mb_strimwidth limita o tanto de caracteres -->
+                            </p>
+                            <span class="card-text"><?= $linha['categoria'] . "<br>" ?></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         <?php
         }
         // echo "parou aqui";
@@ -40,9 +42,11 @@ include "banner.php";
         // print_r($resultado);
         // exit();
         // echo "nem chegou aqui";
+        mysqli_close($conexao);
+        // Conexão fechada
         ?>
 
-        
+
     </div>
 
     <div class="row mt-5">
