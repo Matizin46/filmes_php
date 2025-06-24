@@ -13,6 +13,7 @@ include "banner.php";
 
         $sql = "select * from filmes order by avaliacao desc limit 4";
         // trazendo só os mais avaliados e limitando para 4 filmes
+        
         $resultado = mysqli_query($conexao, $sql);
 
         while ($linha = mysqli_fetch_assoc($resultado)) {
